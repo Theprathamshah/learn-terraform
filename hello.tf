@@ -14,5 +14,7 @@ output hellowithname {
 output intro {
     value = "My name is ${var.username} and my age is ${var.age}"
 }
-
-// terraform apply -var "username=Hetvi Shah" 
+output userlist {
+    value = "We have ${length(var.users)} users in the list and they are ${var.users[1]}"
+}
+// terraform apply -var "username=Hetvi Shah"
