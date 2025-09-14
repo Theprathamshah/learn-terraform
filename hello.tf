@@ -1,6 +1,4 @@
-variable username {
 
-}
 output hello1 {
     value = "Hello World"
 }
