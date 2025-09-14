@@ -17,4 +17,8 @@ output intro {
 output userlist {
     value = "We have ${length(var.users)} users in the list and they are ${var.users[1]}"
 }
+
+output usermessage{
+    value = "User ${var.username} is of age ${lookup(var.usermap, var.username, "Not Found")}"
+}
 // terraform apply -var "username=Hetvi Shah"
