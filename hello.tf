@@ -10,3 +10,9 @@ output hello2 {
 output hellowithname {
     value = "Hello, ${var.username}"
 }
+
+output intro {
+    value = "My name is ${var.username} and my age is ${var.age}"
+}
+
+// terraform apply -var "username=Hetvi Shah" 
